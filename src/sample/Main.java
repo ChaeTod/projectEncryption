@@ -30,7 +30,7 @@ public class Main extends Application {
         //Scene scene = new Scene(vBox, 960, 600);
 
 
-        primaryStage.setScene(new Scene(root, 600, 200));
+        primaryStage.setScene(new Scene(root, 390, 200));
 
         //primaryStage.setScene(scene);
         primaryStage.show();
