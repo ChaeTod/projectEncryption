@@ -176,7 +176,7 @@ public class Controller {
         file.close();
     }
 
-    public String getKey(ActionEvent actionEvent) {
+    public void getKey(ActionEvent actionEvent) {
         if (!keyfield.getText().equals("") && selectedFile != null){
             ecptBtn.setDisable(false);
             decptBtn.setDisable(false);
