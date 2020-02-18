@@ -16,8 +16,7 @@ public class Controller {
     public Button fileChooser;
 
     private File selectedFile;
-    private String newData = "";
-    private String data = "";
+    private String croppedDate = "";
     private String keyString = "";
     private boolean sizeOfChar = false;
 
@@ -92,11 +91,11 @@ public class Controller {
                     letter = (char) letterCode;
                     j++;
                 }
-                newData += letter;
+                croppedDate += letter;
             }
-            System.out.println(newData);
-            writeFile(newData);
-            newData = "";
+            System.out.println(croppedDate);
+            writeFile(croppedDate);
+            croppedDate = "";
             in.close();
         } catch (FileNotFoundException e){
             e.printStackTrace();
@@ -153,11 +152,11 @@ public class Controller {
                     letter = (char) letterCode;
                     j++;
                 }
-                newData = newData + letter;
+                croppedDate = croppedDate + letter;
             }
-            System.out.println(newData);
+            System.out.println(croppedDate);
             //writeFile(newData);  //if it's need to write a new decrypted version
-            newData = "";
+            croppedDate = "";
             in.close(); //when we finished to work with the file, you should close it down!
 
         } catch (FileNotFoundException e) {
